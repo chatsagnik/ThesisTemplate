@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper,twoside]{report}
+\makeatletter
+\providecommand{\@LN}[2]{}
+\makeatother
+
+\RequirePackage{etex}
+\usepackage{chatsagnik}
+
+\usepackage{lipsum}  
+\usepackage{pdfpages}
+
+\usepackage[mathlines]{lineno}
+\title{
+    \vspace{-2in}
+    \Huge
+    \textsc{Your Thesis Title}\\
+    
+    \author{
+        {\Huge\textbf{\color{DarkSlateGrey} Your Name}}\\
+        \centerline{\includegraphics[width = 4cm]{chapters/images/iiitd.pdf}}
+        {\normalsize Indraprastha Institute of Technology, Delhi\par 
+        New Delhi- 110020
+        }\\
+
+    }
+}
+\date{}
+\linenumbers %sometimes compiling results in error - remove cached files and recompile
+\begin{document}
+%  
+\maketitle
+\cleardoublepage
+
+\frontmatter
+\include{chapterextra/abstract}
+\begin{spacing}{1}
+\tableofcontents
+\end{spacing}
+
+\mainmatter
+\include{chapters/intro}
+\cleardoublepage
+\backmatter
+ \begin{spacing}{1}
+    \addcontentsline{toc}{chapter}{Bibliography}
+    {\tiny\printbibliography}
+\end{spacing}
+\end{document}
