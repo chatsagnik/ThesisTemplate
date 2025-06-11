@@ -1,3 +1,10 @@
+## A few interesting features of this Template
+
+- Epigraph integration into chapter headers.
+- Partial ToC for chapter (including level 3 headers and below), whereas the main ToC only includes up to level 2 headers.
+- Chapter-wise Abstract.
+- Clear stylizations of different Mathematical statements.
+
 ## License
 
 The template is available at https://github.com/chatsagnik/ThesisTemplate under a Creative Commons Attribution 4.0 International (CC-BY-4.0) license. For full details, please see https://creativecommons.org/licenses/by/4.0/deed.en
